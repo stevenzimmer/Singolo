@@ -1,0 +1,353 @@
+/*
+Theme Name: Singolo
+Author: Steven Zimmer
+Description: Udemy Homework assignment
+*/
+
+
+/*--------------------
+>>> TABLE OF CONTENTS:
+----------------------
+1.0 Global styles
+2.0 Background colors
+3.0 Navigation
+4.0 Slider section
+5.0 Services section
+6.0 Quote section
+7.0 Footer
+8.0 Media queries
+--------------------*/
+
+
+/* Global styles */
+
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+section {
+	padding: 65px 0;
+}
+
+h2, h4 {
+	font-weight: 700;
+	margin-top: 0;
+}
+
+p {
+	font-weight: 300;
+	line-height: 28px;
+	font-size: 18px;
+}
+
+a {
+	transition: all .2s ease-in-out;
+}
+
+img {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+	color: #fff;
+}
+
+@media (min-width: 992px){
+	.container {
+		width: 940px;
+	}
+}
+
+
+/* Background colors */
+
+.navbar-default {
+	background-color: rgb(48, 52, 65);
+}
+
+#slider {
+	background-color: rgb(235, 80, 85);
+}
+
+
+#services {
+	background-color: rgb(255, 255, 255);
+}
+
+#about {
+	background-color: rgb(48, 52, 65);
+}
+
+#quote {
+	background-color: rgb(235, 80, 85);
+}
+
+footer {
+	padding: 22.5px 0;
+	background-color: rgb(48, 52, 65);
+}
+
+
+/* Background bottom sections */
+
+
+.bg-bottom {
+  height: 6px;
+}
+
+.red {
+  background-color: rgb(234, 103, 107);
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+}
+
+.purple {
+  background-color: rgb(55, 59, 74);
+}
+
+
+
+/* Navigation */
+
+
+.navbar {
+	border-radius: 0;
+	border:none;
+	margin-bottom: 0;
+	padding: 20px 0;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.navbar-brand span,
+.navbar-default .navbar-nav>li>.active {
+	color: #ee5052;
+}
+
+.navbar-brand span,
+.navbar-default .navbar-nav>li>.active:hover {
+	cursor: default;
+	color: #ee5052;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-family: "Lato";
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-nav>li>a:hover {
+	color: rgba(255,255,255,0.75);
+}
+
+.nav>li>a span {
+	margin: 0 15px 0 15px;
+	color: rgb(102, 109, 137);
+	cursor: default;
+}
+
+.nav>li>a {
+	padding: 15px 0;
+}
+
+/* Slider */
+
+
+.vert-align {
+	height: 462px;
+	display: table;
+	
+}
+
+.mid {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Services */
+
+
+#services h2, #services h4 {
+	color: rgb(102, 109, 137);
+}
+
+#quote h2, #about h2, #services h2 {
+	margin-bottom: 20px;
+}
+
+#services p {
+	color: #767e9e;
+	margin-bottom: 55px;
+}
+
+#services .icon p {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 22px;
+	margin-bottom: 30px;
+}
+
+#services .icon .col-sm-4 {
+	padding-left: 0;
+	padding-right: 0
+}
+
+
+/* About */
+
+#about h2, #about h4 {
+	color: rgb(102, 109, 137);
+}
+
+#about p {
+	color: rgb(118, 126, 158);
+	margin-bottom: 55px;
+}
+
+#about .img p {
+	font-size: 12px;
+	line-height: 22px;
+	margin-bottom: 0;
+}
+
+#about .img img {
+	margin-bottom: 20px;
+}
+
+
+/* Quote */
+
+#quote h2, #quote p {
+	color: rgb(240, 216, 217);
+}
+
+
+#quote .form-horizontal {
+	margin-top: 41px;
+}
+
+#quote .form-control {
+	font-size: 12px;
+	color: rgb(244, 140, 143);
+	background-color: rgb(202, 69, 73);
+	border: 1px solid rgb(202, 69, 73);
+	box-shadow: none;
+	font-weight: 500;
+	border-radius: 6px;
+	transition: background-color .3s ease-in-out;
+}
+
+#quote .form-control:focus, #quote .form-control:active {
+	background-color: #fff;
+} 
+
+
+/* Placeholder color */
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { /* Chrome */
+  color: rgb(244, 140, 143)!important;;
+}
+input:-ms-input-placeholder,
+textarea::-webkit-input-placeholder { /* IE 10+ */
+  color: rgb(244, 140, 143)!important;;
+}
+input::-moz-placeholder,
+textarea::-webkit-input-placeholder { /* Firefox 19+ */
+  color: rgb(244, 140, 143)!important;;
+  opacity: 1;
+}
+input:-moz-placeholder,
+textarea::-webkit-input-placeholder { /* Firefox 4 - 18 */
+  color: rgb(244, 140, 143)!important;;
+  opacity: 1;
+}
+
+
+/* footer */
+
+footer p {
+	font-size: 12px;
+	color: rgb(102, 109, 137);
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+span img {
+	margin-right: 10px;
+}
+
+span a:hover {
+	opacity: .75;
+}
+
+
+/* media queries */
+
+
+@media (min-width: 992px){
+	.container {
+		width: 940px;
+	}
+}
+
+@media (max-width: 992px){
+	.icon img {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.navbar .container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	footer .container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.container {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	#about .img p {
+		margin-bottom: 20px;
+	}
+
+	.vert-align {
+		height: 400px;
+	}
+}
+
+@media (max-width: 414px) {
+	
+	#slider {
+		padding: 0;
+	}
+
+	.vert-align {
+		height: 330px;
+	}
+}
+
+
+
+
